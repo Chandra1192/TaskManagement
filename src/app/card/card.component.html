@@ -1,0 +1,21 @@
+<div class="card-form">
+    <div class="form-element">
+        <input class="card-title" id="cardTitle" placeholder="card title" [(ngModel)]="card.cardTitle"/>  
+        <button class="btn-right" (click)="deleteCard()">Delete card</button>
+        <button class="btn-right" (click)="updateCard(card)">Save Card</button>
+    </div>
+    <div  class="form-element">
+        <textarea rows="3" class="card-text" id="cardDescription" placeholder="card description" [(ngModel)]="card.cardDescription"></textarea>
+    </div>
+    <div  class="form-element">
+        <textarea rows="5"  class="card-text" id="comments" [(ngModel)]="comment"></textarea>
+    </div>
+    <div  class="form-element">
+        <button  class="pointer" (click)="addComment()">Add Comment</button>
+    </div>
+    <div  class="form-element" *ngFor="let comment of card.cardComments">
+        <div>
+            {{comment.comment}}   {{comment.date}}
+        </div>
+    </div>
+</div>

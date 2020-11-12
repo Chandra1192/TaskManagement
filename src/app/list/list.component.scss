@@ -1,0 +1,23 @@
+.list-title {
+    display: block;
+    margin-bottom: 1%;
+}
+.btn-right {
+    float: right;
+    cursor: pointer;
+}
+.add-card {
+    display: block;
+    cursor: pointer;
+}
+.card {
+    border: 1px solid gray;
+    width: 90%;
+    height: auto;
+    margin: 1%;
+    margin-top: 4%;
+    padding: 1%;
+    border-radius: 3px;
+    background-color: lightcyan;
+    cursor: pointer;
+}

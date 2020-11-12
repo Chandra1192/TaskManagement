@@ -1,0 +1,13 @@
+.board {
+    border: 1px solid gray;
+    width: 15%;
+    height: auto;
+    padding: 1%;
+    margin: 1%;
+    overflow-y: auto;
+    float: left;
+    border-radius: 3px;
+}
+.pointer {
+    cursor: pointer;
+}

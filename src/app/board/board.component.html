@@ -1,0 +1,9 @@
+<div>
+    <h2>Sample Board</h2>
+    <div class="board" *ngFor="let list of lists; let i=index">
+        <app-list (removeItem)="removeList(i)" [listIndex]="i" [list]="list"></app-list>
+    </div>
+    <div class="board pointer" (click)="addList()">Add new list..  </div>
+</div>
+
+

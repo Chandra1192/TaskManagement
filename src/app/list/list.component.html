@@ -1,0 +1,15 @@
+<div (dragover)="allowDrop($event)" (drop)="drop($event)">
+    <div class="list-title" style="display: block;">
+        <span>{{list.listTitle}}</span>
+        <button class="btn-right" (click)="removeListItem()">Delete this List</button>
+    </div>
+    <div  class="card" *ngFor="let card of list.cards;let i=index">
+        <div [id]="i"  (click)="setCard(card, i)" draggable="true" 
+            (dragstart)="drag($event)"> 
+            {{card.cardTitle}}
+        </div>
+    </div> 
+    <div class="add-card" (click)="addCard()">
+        <p>Add new card..</p>
+    </div>   
+</div>
